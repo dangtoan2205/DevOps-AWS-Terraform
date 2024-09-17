@@ -1,4 +1,4 @@
-# Tạo một file cấu hình có tên `main.tf`
+## 1. Tạo một file cấu hình có tên `main.tf`
 
 ### Chỉ định provider AWS
 provider "aws" {
