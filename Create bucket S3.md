@@ -1,6 +1,7 @@
 ## 1. Tạo một file cấu hình có tên `main.tf`
 
-### Chỉ định provider AWS
+## 2. Thêm nội dung vào file ``main.tf``
+## Chỉ định provider AWS
 provider "aws" {
   region = "us-east-1" # Thay đổi theo vùng bạn muốn sử dụng
 }
