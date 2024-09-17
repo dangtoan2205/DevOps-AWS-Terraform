@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/d2cbec07-33fe-4b1b-9831-061322c4a884)
 
 ## 3. Khởi tạo Terraform
-`terreform init1`
+`terreform init`
 
 ## 4. Kiểm tra cấu hình
 `terraform plan`
