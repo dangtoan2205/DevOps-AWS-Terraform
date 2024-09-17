@@ -8,7 +8,7 @@ provider "aws" { </br>
   region = "us-east-1" # Thay đổi theo vùng bạn muốn sử dụng </br>
 } </br>
 
-#Tạo một bucket S3
+### Tạo một bucket S3
 resource "aws_s3_bucket" "lession_bucket" {
   bucket = "lession" # Tên bucket S3, phải là duy nhất trong toàn cầu
 
