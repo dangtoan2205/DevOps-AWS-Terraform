@@ -5,7 +5,11 @@ Link: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/instal
 ## 2. Quick start tutorial
 
 Create a directory named `learn-terraform-docker-container`
-```mkdir learn-terraform-docker-container
-
+----
+```
+mkdir learn-terraform-docker-container
+```
+Navigate into the working directory.
+----
 
 
