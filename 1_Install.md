@@ -54,4 +54,4 @@ Provision the NGINX server container with `apply`. When Terraform asks you to co
 ```
 terraform apply
 ```
-Verify the existence of the NGINX container by visiting [localhost:8000](localhost:8000) in your web browser or running `docker ps` to see the container.
+Verify the existence of the NGINX container by visiting [localhost:8000](http://localhost:8000) in your web browser or running `docker ps` to see the container.
