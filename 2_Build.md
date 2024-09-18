@@ -1,4 +1,5 @@
 ## 1.Build infrastructure
+Link: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build
 
 ## 2. Prerequisites
 To use your IAM credentials to authenticate the Terraform AWS provider, set the `AWS_ACCESS_KEY_ID` environment variable.
