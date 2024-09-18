@@ -55,3 +55,9 @@ Provision the NGINX server container with `apply`. When Terraform asks you to co
 terraform apply
 ```
 Verify the existence of the NGINX container by visiting [localhost:8000](http://localhost:8000) in your web browser or running `docker ps` to see the container.
+![image](https://github.com/user-attachments/assets/eafc4d04-d550-4c18-b942-f87003612d16)
+To stop the container, run `terraform destroy`.
+```
+terraform destroy
+```
+You've now provisioned and destroyed an NGINX webserver with Terraform.
