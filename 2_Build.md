@@ -53,7 +53,7 @@ resource "aws_instance" "app_server" {
   }
 }
 ```
-This is a complete configuration that you can deploy with Terraform. The following sections review each block of this configuration in more detail.
+This is a complete configuration that you can deploy with Terraform. The following sections review each block of this configuration in more detail.</br>
 ![image](https://github.com/user-attachments/assets/2e29de0c-7f2d-41f5-85cd-ad4bfcf765dd)
 
 ## 4.Terraform Block
@@ -77,7 +77,7 @@ Khi bạn tạo cấu hình mới — hoặc kiểm tra cấu hình hiện có t
 
 Việc khởi tạo thư mục cấu hình sẽ tải xuống và cài đặt các nhà cung cấp được xác định trong cấu hình, trong trường hợp này là nhà cung cấp `aws`.
 
-Khởi tạo thư mục.
+Khởi tạo thư mục.</br>
 ![image](https://github.com/user-attachments/assets/8a473e8c-0d21-46b1-8b19-f6011b9e33e6)
 
 Terraform tải xuống `aws` nhà cung cấp và cài đặt nó trong một thư mục con ẩn của thư mục làm việc hiện tại của bạn, có tên là `.terraform.` `terraform init` Lệnh in ra phiên bản nào của nhà cung cấp đã được cài đặt. Terraform cũng tạo một tệp khóa có tên `.terraform.lock.hcl` là chỉ định các phiên bản nhà cung cấp chính xác được sử dụng, để bạn có thể kiểm soát thời điểm bạn muốn cập nhật các nhà cung cấp được sử dụng cho dự án của mình.
@@ -97,11 +97,11 @@ terraform validate
 ```
 
 ## 10. Create infrastructure
-Apply the configuration now with the `terraform apply` command. Terraform will print output similar to what is shown below. We have truncated some of the output to save space.
+Apply the configuration now with the `terraform apply` command. Terraform will print output similar to what is shown below. We have truncated some of the output to save space.</br>
 ![image](https://github.com/user-attachments/assets/a4d39cae-a2f2-45fb-8484-d193fe1aa350)
 
 Before it applies any changes, Terraform prints out the execution plan which describes the actions Terraform will take in order to change your infrastructure to match the configuration.
-In this case the plan is acceptable, so type `yes` at the confirmation prompt to proceed. Executing the plan will take a few minutes since Terraform waits for the EC2 instance to become available
+In this case the plan is acceptable, so type `yes` at the confirmation prompt to proceed. Executing the plan will take a few minutes since Terraform waits for the EC2 instance to become available</br>
 ![image](https://github.com/user-attachments/assets/8325f8e4-e9b6-4f42-adfb-9f01f9cbeda0)
 
 
