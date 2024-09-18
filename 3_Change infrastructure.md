@@ -1,6 +1,7 @@
-# Change infrastructure
+## 1. Change infrastructure
+Link: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-change
 
-## 1. Prerequisites
+## 2. Prerequisites
 This tutorial assumes that you are continuing from the previous tutorials. If not, follow the steps below before continuing.
 
 - Install the Terraform CLI (1.2.0+), and the AWS CLI (configured with a default profile), as described in the last tutorial.
@@ -43,13 +44,13 @@ terraform apply
 ```
 Once you have successfully applied the configuration, you can continue with the rest of this tutorial.
 
-## 2. Configuration
+## 3. Configuration
 Now update the `ami` of your instance. Change the `aws_instance.app_server` resource under the provider block in `main.tf` by replacing the current AMI ID with a new one.</br>
 ![image](https://github.com/user-attachments/assets/a5a14f8e-cd70-47b4-a6a4-8acd6f1ed043)
 
 This update changes the AMI to an Ubuntu 16.04 AMI. The AWS provider knows that it cannot change the AMI of an instance after it has been created, so Terraform will destroy the old instance and create a new one.
 
-## 3. Apply Changes
+## 4. Apply Changes
 After changing the configuration, run `terraform apply` again to see how Terraform will apply this change to the existing resources.</br>
 ![image](https://github.com/user-attachments/assets/69841e04-a065-4d0d-92e0-25f0aa23d1ee)
 The prefix `-/+` means that Terraform will destroy and recreate the resource, rather than updating it in-place. Terraform can update some attributes in-place (indicated with the ~ prefix), but changing the AMI for an EC2 instance requires recreating it. Terraform handles these details for you, and the execution plan displays what Terraform will do.
